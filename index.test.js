@@ -18,7 +18,7 @@ describe('Calculadora API', () => {
   });
 
   it('resta correctamente', async () => {
-    const res = await request(app).post('/subtract').send({ a: 7, b: 3 });
+    const res = await request(app).post('/subtract').send({ a: 8, b: 3 });
     expect(res.body.result).toBe(3);
   });
 });
