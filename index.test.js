@@ -12,6 +12,11 @@ describe('Calculadora API', () => {
     expect(res.body.result).toBe(8);
   });
 
+  // it('suma correctamente', async () => {
+  //   const res = await request(app).post('/add').send({ a: 10, b: 7 });
+  //   expect(res.body.result).toBe(17);
+  // });
+
   it('resta correctamente', async () => {
     const res = await request(app).post('/subtract').send({ a: 5, b: 3 });
     expect(res.body.result).toBe(2);
